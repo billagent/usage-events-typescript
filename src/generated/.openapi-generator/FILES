@@ -2,13 +2,13 @@
 .npmignore
 README.md
 api.ts
-api/usage-events-api.ts
+api/usage-events-three-api.ts
 base.ts
 common.ts
 configuration.ts
 docs/ProtobufAny.md
 docs/RpcStatus.md
-docs/UsageEventsApi.md
+docs/UsageEventsThreeApi.md
 docs/V1IntakeUsageEventRequest.md
 docs/V1IntakeUsageEventResponse.md
 docs/V1TermMatch.md

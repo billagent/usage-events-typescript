@@ -51,7 +51,7 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*UsageEventsApi* | [**usageTermMatcherServiceIntakeUsageEvent**](docs/UsageEventsApi.md#usagetermmatcherserviceintakeusageevent) | **POST** /product/usage-intake | Process a usage event
+*UsageEventsThreeApi* | [**usageTermMatcherServiceIntakeUsageEvent**](docs/UsageEventsThreeApi.md#usagetermmatcherserviceintakeusageevent) | **POST** /product/usage-intake | Process a usage event
 
 
 ### Documentation For Models
