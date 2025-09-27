@@ -11,16 +11,22 @@ npm install @billagent/usage-events
 ## Usage
 
 ```typescript
-import { UsageEventsUsageTermMatcherServiceApi, Configuration } from '@billagent/usage-events';
+import * as UsageEvents from '@billagent/usage-events';
 
 // Configure the API client
-const configuration = new Configuration({
+const configuration = new UsageEvents.Configuration({
   basePath: 'https://api.billagent.ai', // Replace with your API endpoint
   apiKey: 'your-api-key-here', // Replace with your API key
 });
 
+// Find the API class (name may vary based on swagger tags)
+// Look for classes ending with 'Api' in the imported module
+const ApiClass = Object.values(UsageEvents).find(
+  (item) => typeof item === 'function' && item.name.endsWith('Api')
+);
+
 // Create the API instance
-const api = new UsageEventsUsageTermMatcherServiceApi(configuration);
+const api = new ApiClass(configuration);
 
 // Process a usage event
 const usageEvent = {
@@ -42,7 +48,7 @@ try {
 
 ## API Reference
 
-### UsageEventsUsageTermMatcherServiceApi
+### Main API Class
 
 #### `usageTermMatcherServiceIntakeUsageEvent(body: V1IntakeUsageEventRequest)`
 
