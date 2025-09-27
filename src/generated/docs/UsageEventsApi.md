@@ -1,4 +1,4 @@
-# UsageEventsAgainApi
+# UsageEventsApi
 
 All URIs are relative to *http://localhost*
 
@@ -15,13 +15,13 @@ Matches usage events to contract terms and returns event price and matched term 
 
 ```typescript
 import {
-    UsageEventsAgainApi,
+    UsageEventsApi,
     Configuration,
     V1IntakeUsageEventRequest
 } from '@billagent/usage-events';
 
 const configuration = new Configuration();
-const apiInstance = new UsageEventsAgainApi(configuration);
+const apiInstance = new UsageEventsApi(configuration);
 
 let body: V1IntakeUsageEventRequest; //
 
