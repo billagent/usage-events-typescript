@@ -14,5 +14,5 @@
 
 
 
-export * from './api/usage-events-three-api';
+export * from './api/usage-events-api';
 
