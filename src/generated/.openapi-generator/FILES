@@ -2,13 +2,13 @@
 .npmignore
 README.md
 api.ts
-api/usage-events-usage-term-matcher-service-api.ts
+api/usage-events-api.ts
 base.ts
 common.ts
 configuration.ts
 docs/ProtobufAny.md
 docs/RpcStatus.md
-docs/UsageEventsUsageTermMatcherServiceApi.md
+docs/UsageEventsApi.md
 docs/V1IntakeUsageEventRequest.md
 docs/V1IntakeUsageEventResponse.md
 docs/V1TermMatch.md
