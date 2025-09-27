@@ -3,7 +3,7 @@ inputSpec: ../usage_event.swagger.yaml
 outputDir: src/generated
 additionalProperties:
   npmName: "@billagent/usage-events"
-  npmVersion: 0.10.3-alpha
+  npmVersion: 0.10.8-alpha
   npmDescription: BillAgent Usage Events API client for TypeScript/JavaScript
   npmRepository: https://github.com/billagent/usage-events-typescript.git
   npmAuthor: BillAgent.ai Inc. <support@billagent.ai>
