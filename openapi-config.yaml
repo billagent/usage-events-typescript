@@ -1,0 +1,19 @@
+generatorName: typescript-axios
+inputSpec: ../usage_event.swagger.yaml
+outputDir: src/generated
+additionalProperties:
+  npmName: "@billagent/usage-events"
+  npmVersion: 0.10.1-alpha
+  npmDescription: BillAgent Usage Events API client for TypeScript/JavaScript
+  npmRepository: https://github.com/williamohara/usage-events-typescript.git
+  npmAuthor: BillAgent.ai Inc. <support@billagent.ai>
+  npmLicense: Copyright 2025 BillAgent.ai Inc.
+  supportsES6: true
+  withNodeImports: true
+  withSeparateModelsAndApi: true
+  modelPackage: models
+  apiPackage: api
+  withInterfaces: true
+  useSingleRequestParameter: false
+  stringEnums: true
+  enumPropertyNaming: UPPERCASE

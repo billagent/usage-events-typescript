@@ -1,0 +1,57 @@
+{
+  "name": "@billagent/usage-events",
+  "version": "0.10.1-alpha",
+  "description": "BillAgent Usage Events API client for TypeScript/JavaScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "generate": "openapi-generator-cli generate -i ../usage_event.swagger.yaml -g typescript-axios -o src/generated -c openapi-config.yaml",
+    "prebuild": "npm run generate",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist src/generated"
+  },
+  "keywords": [
+    "billagent",
+    "usage-events",
+    "billing",
+    "api-client",
+    "typescript"
+  ],
+  "author": "BillAgent.ai Inc. <support@billagent.ai>",
+  "license": "Copyright 2025 BillAgent.ai Inc.",
+  "homepage": "https://www.billagent.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/williamohara/usage-events-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/williamohara/usage-events-typescript/issues"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
