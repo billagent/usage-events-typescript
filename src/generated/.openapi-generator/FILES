@@ -3,13 +3,13 @@
 .openapi-generator-ignore
 README.md
 api.ts
-api/usage-events-api.ts
+api/usage-events-again-api.ts
 base.ts
 common.ts
 configuration.ts
 docs/ProtobufAny.md
 docs/RpcStatus.md
-docs/UsageEventsApi.md
+docs/UsageEventsAgainApi.md
 docs/V1IntakeUsageEventRequest.md
 docs/V1IntakeUsageEventResponse.md
 docs/V1TermMatch.md

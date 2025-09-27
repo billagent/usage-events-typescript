@@ -31,10 +31,10 @@ import type { V1IntakeUsageEventRequest } from '../models';
 // @ts-ignore
 import type { V1IntakeUsageEventResponse } from '../models';
 /**
- * UsageEventsApi - axios parameter creator
+ * UsageEventsAgainApi - axios parameter creator
  * @export
  */
-export const UsageEventsApiAxiosParamCreator = function (configuration?: Configuration) {
+export const UsageEventsAgainApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * Matches usage events to contract terms and returns event price and matched term metadata.
@@ -79,11 +79,11 @@ export const UsageEventsApiAxiosParamCreator = function (configuration?: Configu
 };
 
 /**
- * UsageEventsApi - functional programming interface
+ * UsageEventsAgainApi - functional programming interface
  * @export
  */
-export const UsageEventsApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = UsageEventsApiAxiosParamCreator(configuration)
+export const UsageEventsAgainApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = UsageEventsAgainApiAxiosParamCreator(configuration)
     return {
         /**
          * Matches usage events to contract terms and returns event price and matched term metadata.
@@ -95,18 +95,18 @@ export const UsageEventsApiFp = function(configuration?: Configuration) {
         async usageTermMatcherServiceIntakeUsageEvent(body: V1IntakeUsageEventRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<V1IntakeUsageEventResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.usageTermMatcherServiceIntakeUsageEvent(body, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['UsageEventsApi.usageTermMatcherServiceIntakeUsageEvent']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['UsageEventsAgainApi.usageTermMatcherServiceIntakeUsageEvent']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * UsageEventsApi - factory interface
+ * UsageEventsAgainApi - factory interface
  * @export
  */
-export const UsageEventsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = UsageEventsApiFp(configuration)
+export const UsageEventsAgainApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = UsageEventsAgainApiFp(configuration)
     return {
         /**
          * Matches usage events to contract terms and returns event price and matched term metadata.
@@ -122,40 +122,40 @@ export const UsageEventsApiFactory = function (configuration?: Configuration, ba
 };
 
 /**
- * UsageEventsApi - interface
+ * UsageEventsAgainApi - interface
  * @export
- * @interface UsageEventsApi
+ * @interface UsageEventsAgainApi
  */
-export interface UsageEventsApiInterface {
+export interface UsageEventsAgainApiInterface {
     /**
      * Matches usage events to contract terms and returns event price and matched term metadata.
      * @summary Process a usage event
      * @param {V1IntakeUsageEventRequest} body 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UsageEventsApiInterface
+     * @memberof UsageEventsAgainApiInterface
      */
     usageTermMatcherServiceIntakeUsageEvent(body: V1IntakeUsageEventRequest, options?: RawAxiosRequestConfig): AxiosPromise<V1IntakeUsageEventResponse>;
 
 }
 
 /**
- * UsageEventsApi - object-oriented interface
+ * UsageEventsAgainApi - object-oriented interface
  * @export
- * @class UsageEventsApi
+ * @class UsageEventsAgainApi
  * @extends {BaseAPI}
  */
-export class UsageEventsApi extends BaseAPI implements UsageEventsApiInterface {
+export class UsageEventsAgainApi extends BaseAPI implements UsageEventsAgainApiInterface {
     /**
      * Matches usage events to contract terms and returns event price and matched term metadata.
      * @summary Process a usage event
      * @param {V1IntakeUsageEventRequest} body 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UsageEventsApi
+     * @memberof UsageEventsAgainApi
      */
     public usageTermMatcherServiceIntakeUsageEvent(body: V1IntakeUsageEventRequest, options?: RawAxiosRequestConfig) {
-        return UsageEventsApiFp(this.configuration).usageTermMatcherServiceIntakeUsageEvent(body, options).then((request) => request(this.axios, this.basePath));
+        return UsageEventsAgainApiFp(this.configuration).usageTermMatcherServiceIntakeUsageEvent(body, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
