@@ -5,7 +5,7 @@ additionalProperties:
   npmName: "@billagent/usage-events"
   npmVersion: 0.10.1-alpha
   npmDescription: BillAgent Usage Events API client for TypeScript/JavaScript
-  npmRepository: https://github.com/williamohara/usage-events-typescript.git
+  npmRepository: https://github.com/billagent/usage-events-typescript.git
   npmAuthor: BillAgent.ai Inc. <support@billagent.ai>
   npmLicense: Copyright 2025 BillAgent.ai Inc.
   supportsES6: true
