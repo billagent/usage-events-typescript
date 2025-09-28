@@ -1,6 +1,6 @@
 {
   "name": "@billagent/usage-events",
-  "version": "0.10.11-alpha",
+  "version": "0.10.12-alpha",
   "description": "OpenAPI client for @billagent/usage-events",
   "author": "OpenAPI-Generator Contributors",
   "repository": {
