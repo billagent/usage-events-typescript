@@ -1,0 +1,10 @@
+# .github/workflows/publish.yaml
+
+name: Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
