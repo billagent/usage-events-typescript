@@ -1,6 +1,6 @@
 {
   "name": "@billagent/usage-events",
-  "version": "0.10.10-alpha",
+  "version": "0.10.11-alpha",
   "description": "BillAgent Usage Events API client for TypeScript/JavaScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

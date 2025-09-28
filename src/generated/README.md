@@ -1,4 +1,4 @@
-## @billagent/usage-events@0.10.10-alpha
+## @billagent/usage-events@0.10.11-alpha
 
 This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
 
@@ -36,7 +36,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install @billagent/usage-events@0.10.10-alpha --save
+npm install @billagent/usage-events@0.10.11-alpha --save
 ```
 
 _unPublished (not recommended):_
