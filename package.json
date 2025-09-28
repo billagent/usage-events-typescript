@@ -29,10 +29,10 @@
   "homepage": "https://www.billagent.ai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/williamohara/usage-events-typescript.git"
+    "url": "https://github.com/billagent/usage-events-typescript.git"
   },
   "bugs": {
-    "url": "https://github.com/williamohara/usage-events-typescript/issues"
+    "url": "https://github.com/billagent/usage-events-typescript/issues"
   },
   "dependencies": {
     "axios": "^1.6.0"
