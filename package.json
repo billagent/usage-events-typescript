@@ -11,8 +11,9 @@
   ],
   "scripts": {
     "build": "tsc",
+    "build:ci": "tsc",
     "clean": "rm -rf dist src/generated",
-    "prebuild": "npm run clean && npx openapi-generator-cli generate -i ../usage_event.swagger.yaml -g typescript-axios -o src/generated -c openapi-config.yaml",
+    "generate": "npm run clean && npx openapi-generator-cli generate -i ../usage_event.swagger.yaml -g typescript-axios -o src/generated -c openapi-config.yaml",
     "test": "jest",
     "lint": "eslint src/**/*.ts"
   },
