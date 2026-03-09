@@ -1,5 +1,6 @@
 # V1IntakeEventRequest
 
+A request to intake a usage event and match it to a contract term. This will only take in one of the two event types: milestone_event_match or usage_event_match.
 
 ## Properties
 

@@ -23,7 +23,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new UsageEventsApi(configuration);
 
-let body: V1IntakeEventRequest; //
+let body: V1IntakeEventRequest; //A request to intake a usage event and match it to a contract term. This will only take in one of the two event types: milestone_event_match or usage_event_match.
 
 const { status, data } = await apiInstance.termMatcherServiceIntakeEvent(
     body
@@ -34,7 +34,7 @@ const { status, data } = await apiInstance.termMatcherServiceIntakeEvent(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **body** | **V1IntakeEventRequest**|  | |
+| **body** | **V1IntakeEventRequest**| A request to intake a usage event and match it to a contract term. This will only take in one of the two event types: milestone_event_match or usage_event_match. | |
 
 
 ### Return type
