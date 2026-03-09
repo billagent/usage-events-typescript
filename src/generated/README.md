@@ -1,4 +1,4 @@
-## @billagent/usage-events@0.10.12-alpha
+## @billagent/usage-events@0.11.01-alpha
 
 This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
 
@@ -36,7 +36,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install @billagent/usage-events@0.10.12-alpha --save
+npm install @billagent/usage-events@0.11.01-alpha --save
 ```
 
 _unPublished (not recommended):_
@@ -51,17 +51,19 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*UsageEventsApi* | [**usageTermMatcherServiceIntakeUsageEvent**](docs/UsageEventsApi.md#usagetermmatcherserviceintakeusageevent) | **POST** /product/usage-intake | Process a usage event
+*UsageEventsApi* | [**termMatcherServiceIntakeEvent**](docs/UsageEventsApi.md#termmatcherserviceintakeevent) | **POST** /product/usage-intake | Process a usage event
 
 
 ### Documentation For Models
 
  - [ProtobufAny](docs/ProtobufAny.md)
  - [RpcStatus](docs/RpcStatus.md)
- - [V1IntakeUsageEventRequest](docs/V1IntakeUsageEventRequest.md)
- - [V1IntakeUsageEventResponse](docs/V1IntakeUsageEventResponse.md)
+ - [V1IntakeEventRequest](docs/V1IntakeEventRequest.md)
+ - [V1IntakeEventResponse](docs/V1IntakeEventResponse.md)
+ - [V1MilestoneEventMatch](docs/V1MilestoneEventMatch.md)
  - [V1TermMatch](docs/V1TermMatch.md)
  - [V1TermMatchError](docs/V1TermMatchError.md)
+ - [V1UsageEventMatch](docs/V1UsageEventMatch.md)
 
 
 <a id="documentation-for-authorization"></a>

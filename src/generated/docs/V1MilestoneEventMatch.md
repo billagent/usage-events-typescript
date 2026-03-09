@@ -1,19 +1,19 @@
-# ProtobufAny
+# V1MilestoneEventMatch
 
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **string** |  | [optional] [default to undefined]
+**phase_id** | **string** | The phase id of the milestone event. | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { ProtobufAny } from '@billagent/usage-events';
+import { V1MilestoneEventMatch } from '@billagent/usage-events';
 
-const instance: ProtobufAny = {
-    type,
+const instance: V1MilestoneEventMatch = {
+    phase_id,
 };
 ```
 

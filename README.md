@@ -50,7 +50,7 @@ try {
 
 ### Main API Class
 
-#### `usageTermMatcherServiceIntakeUsageEvent(body: V1IntakeUsageEventRequest)`
+#### `termMatcherServiceIntakeEvent(body: V1IntakeUsageEventRequest)`
 
 Processes a usage event and returns matched terms.
 

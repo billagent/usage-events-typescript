@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **contract_uuid** | **string** | The matched contract uuid for the event. | [optional] [default to undefined]
 **sku_id** | **string** | The matched sku id in the contract for the event. | [optional] [default to undefined]
+**event_type** | **string** | The type of the event. | [optional] [default to undefined]
 **term_type** | **string** | The matched term type for the event. | [optional] [default to undefined]
 **price** | **number** | The price of the event per the matched term. | [optional] [default to undefined]
 **line_item_description** | **string** | The invoice_line_description of the matched widget. | [optional] [default to undefined]
@@ -23,6 +24,7 @@ import { V1TermMatch } from '@billagent/usage-events';
 const instance: V1TermMatch = {
     contract_uuid,
     sku_id,
+    event_type,
     term_type,
     price,
     line_item_description,

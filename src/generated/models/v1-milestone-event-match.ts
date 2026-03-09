@@ -15,16 +15,16 @@
 
 
 /**
- * An error that occurred during term matching
+ * 
  * @export
- * @interface V1TermMatchError
+ * @interface V1MilestoneEventMatch
  */
-export interface V1TermMatchError {
+export interface V1MilestoneEventMatch {
     /**
-     * A json string of the error that occurred.
+     * The phase id of the milestone event.
      * @type {string}
-     * @memberof V1TermMatchError
+     * @memberof V1MilestoneEventMatch
      */
-    'error'?: string;
+    'phase_id'?: string;
 }
 

@@ -1,4 +1,4 @@
-# V1IntakeUsageEventResponse
+# V1IntakeEventResponse
 
 
 ## Properties
@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { V1IntakeUsageEventResponse } from '@billagent/usage-events';
+import { V1IntakeEventResponse } from '@billagent/usage-events';
 
-const instance: V1IntakeUsageEventResponse = {
+const instance: V1IntakeEventResponse = {
     term_matches,
     term_match_errors,
 };

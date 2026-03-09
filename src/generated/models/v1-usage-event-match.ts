@@ -15,16 +15,22 @@
 
 
 /**
- * An error that occurred during term matching
+ * 
  * @export
- * @interface V1TermMatchError
+ * @interface V1UsageEventMatch
  */
-export interface V1TermMatchError {
+export interface V1UsageEventMatch {
     /**
-     * A json string of the error that occurred.
+     * The sku id of the usage event.
      * @type {string}
-     * @memberof V1TermMatchError
+     * @memberof V1UsageEventMatch
      */
-    'error'?: string;
+    'sku_id'?: string;
+    /**
+     * The count of the usage event.
+     * @type {string}
+     * @memberof V1UsageEventMatch
+     */
+    'count'?: string;
 }
 

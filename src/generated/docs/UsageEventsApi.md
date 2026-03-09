@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost*
 
 |Method | HTTP request | Description|
 |------------- | ------------- | -------------|
-|[**usageTermMatcherServiceIntakeUsageEvent**](#usagetermmatcherserviceintakeusageevent) | **POST** /product/usage-intake | Process a usage event|
+|[**termMatcherServiceIntakeEvent**](#termmatcherserviceintakeevent) | **POST** /product/usage-intake | Process a usage event|
 
-# **usageTermMatcherServiceIntakeUsageEvent**
-> V1IntakeUsageEventResponse usageTermMatcherServiceIntakeUsageEvent(body)
+# **termMatcherServiceIntakeEvent**
+> V1IntakeEventResponse termMatcherServiceIntakeEvent(body)
 
 Matches usage events to contract terms and returns event price and matched term metadata.
 
@@ -17,15 +17,15 @@ Matches usage events to contract terms and returns event price and matched term 
 import {
     UsageEventsApi,
     Configuration,
-    V1IntakeUsageEventRequest
+    V1IntakeEventRequest
 } from '@billagent/usage-events';
 
 const configuration = new Configuration();
 const apiInstance = new UsageEventsApi(configuration);
 
-let body: V1IntakeUsageEventRequest; //
+let body: V1IntakeEventRequest; //
 
-const { status, data } = await apiInstance.usageTermMatcherServiceIntakeUsageEvent(
+const { status, data } = await apiInstance.termMatcherServiceIntakeEvent(
     body
 );
 ```
@@ -34,12 +34,12 @@ const { status, data } = await apiInstance.usageTermMatcherServiceIntakeUsageEve
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **body** | **V1IntakeUsageEventRequest**|  | |
+| **body** | **V1IntakeEventRequest**|  | |
 
 
 ### Return type
 
-**V1IntakeUsageEventResponse**
+**V1IntakeEventResponse**
 
 ### Authorization
 
