@@ -7,7 +7,7 @@ A request to intake a usage event and match it to a contract term. This will onl
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **contract_uuid** | **string** | Required: this is the contract uuid associated with this event, if the contract is not found, or if the contract is not active, a match will not occur. | [optional] [default to undefined]
-**event_time** | **string** | Optional:the time of the event, if the event time does not fit within the contract term dates a match will not occur. If this value is left out it will default to now(). | [optional] [default to undefined]
+**event_time** | **string** | Optional: the time of the event. For usage_event_match: if the event time does not fit within the contract term dates a match will not occur; if left out it defaults to now(). For milestone_event_match: ignored; event time is always treated as now(). | [optional] [default to undefined]
 **milestone_event_match** | [**V1MilestoneEventMatch**](V1MilestoneEventMatch.md) |  | [optional] [default to undefined]
 **usage_event_match** | [**V1UsageEventMatch**](V1UsageEventMatch.md) |  | [optional] [default to undefined]
 

@@ -33,7 +33,7 @@ export interface V1IntakeEventRequest {
      */
     'contract_uuid'?: string;
     /**
-     * Optional:the time of the event, if the event time does not fit within the contract term dates a match will not occur. If this value is left out it will default to now().
+     * Optional: the time of the event. For usage_event_match: if the event time does not fit within the contract term dates a match will not occur; if left out it defaults to now(). For milestone_event_match: ignored; event time is always treated as now().
      * @type {string}
      * @memberof V1IntakeEventRequest
      */
